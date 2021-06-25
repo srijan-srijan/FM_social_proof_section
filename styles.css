@@ -18,6 +18,10 @@
   font-family: "Spartan";
 }
 
+body {
+  position: relative;
+}
+
 .social-proof {
   background-color: white;
   width: 95%;
@@ -104,6 +108,27 @@
   color: var(--white);
 }
 
+.top-background {
+  background-image: url("./images/bg-pattern-top-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.bottom-background {
+  background-image: url("./images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.attribution {
+  margin: 30px 0;
+}
+
 @media only screen and (min-width: 960px) {
   body {
     display: flex;
@@ -160,7 +185,11 @@
     transform: translateY(20%);
   }
 
-  .attribution {
-    margin-top: 30px;
+  .top-background {
+    background-image: url("./images/bg-pattern-top-desktop.svg");
+  }
+
+  .bottom-background {
+    background-image: url("./images/bg-pattern-bottom-desktop.svg");
   }
 }
