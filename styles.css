@@ -103,3 +103,64 @@
   text-align: start;
   color: var(--white);
 }
+
+@media only screen and (min-width: 960px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+  .social-proof {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-gap: 4rem;
+    max-width: 1420px;
+  }
+
+  .text-area {
+    text-align: start;
+  }
+
+  .ratings .rating {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    align-self: flex-end;
+  }
+
+  .rating.second-rating {
+    transform: translateX(-10%);
+  }
+
+  .rating.first-rating {
+    transform: translateX(-20%);
+  }
+
+  .reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: span 2;
+  }
+
+  .review-card {
+    max-width: 400px;
+  }
+
+  .review-card.second-review {
+    transform: translateY(10%);
+  }
+
+  .review-card.third-review {
+    transform: translateY(20%);
+  }
+
+  .attribution {
+    margin-top: 30px;
+  }
+}
